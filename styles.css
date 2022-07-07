@@ -3,3 +3,41 @@ body{
     font-family: 'League Spartan', sans-serif;
     padding: 100px;
 }
+
+
+
+
+
+/* Top Div */
+
+.textTop{
+    width: 500px;
+}
+
+
+.textTop h5{
+    color:  hsl(300, 43%, 22%);
+    font-size: 55px;
+    font-weight: 700;
+    
+  
+}
+
+.textTop p{
+    color: hsl(303, 10%, 53%) ;
+    font-size: 15px;
+    
+}
+
+
+/* Text Star Div */
+
+.textStar{
+    justify-content: space-between;
+    display: flex;
+   
+}
+
+.starSpace{
+    width: 17px
+}
