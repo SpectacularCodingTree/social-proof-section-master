@@ -1,10 +1,26 @@
 body{
     background-color: aliceblue;
     font-family: 'League Spartan', sans-serif;
-    padding: 100px;
+    padding: 130px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
 }
 
+/* Background Images */
 
+.imgBgTop{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.imgBgBottom{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
 
 
 
@@ -40,4 +56,93 @@ body{
 
 .starSpace{
     width: 17px
+}
+
+
+.starStructure{
+    background-color:   hsl(300, 24%, 96%);
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -84px;
+
+}
+
+.starStructure2{
+    background-color:   hsl(300, 24%, 96%);
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -36px;
+}
+
+.starStructure3{
+    background-color:   hsl(300, 24%, 96%);
+    width: 400px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divStar{
+    
+}
+
+.divStar h2{
+    color: hsl(300, 43%, 22%);
+    margin-left: 25px;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.divStar img{
+   
+}
+
+
+/* Bottom div people of Space */
+
+.card1{
+    width: 350px;
+    height: 240px;
+    margin-top: 260px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+}
+
+.card2{
+    width: 350px;
+    height: 240px;
+    margin-top: 281px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+}
+
+.card3{
+    width: 350px;
+    height: 240px;
+    margin-top: 300px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+}
+
+.imgRound{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.purpleText{
+    color:  hsl(333, 80%, 67%);
 }
