@@ -146,3 +146,20 @@ body{
 .purpleText{
     color:  hsl(333, 80%, 67%);
 }
+
+
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 375px) {
+  /* body{
+    background-color: aqua;
+
+  }
+  .textStar{
+    display: block;
+  } */
+}
