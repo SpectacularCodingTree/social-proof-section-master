@@ -1,165 +1,238 @@
-body{
-    background-color: aliceblue;
-    font-family: 'League Spartan', sans-serif;
-    padding: 130px;
-    background-color: hsl(0, 0%, 100%);
-    overflow: hidden;
+body {
+  background-color: aliceblue;
+  font-family: "League Spartan", sans-serif;
+  padding-top: 95px;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
 }
 
 /* Background Images */
 
-.imgBgTop{
+.imgBgTop {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.imgBgBottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+/* Top Div */
+
+.textTop {
+  width: 100%;
+}
+
+.textTop h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.textTop p {
+  color: hsl(303, 10%, 53%);
+  font-size: 15px;
+}
+
+/* Text Star Div */
+
+.textStar {
+  justify-content: space-between;
+  display: flex;
+}
+
+.starSpace {
+  width: 17px;
+}
+
+.starStructure {
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  background-color: hsl(300, 24%, 96%);
+  width: 400px;
+  height: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.starStructure2 {
+  position: absolute;
+  right: 30px;
+  top: 65px;
+  background-color: hsl(300, 24%, 96%);
+  width: 400px;
+  height: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.starStructure3 {
+  position: absolute;
+  background-color: hsl(300, 24%, 96%);
+  width: 400px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  top: 130px;
+}
+
+.divStar {
+  position: relative;
+  height: 100%;
+}
+
+.divStar h2 {
+  color: hsl(300, 43%, 22%);
+  margin-left: 25px;
+  font-size: large;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.divStar img {
+}
+
+/* Bottom div people of Space */
+
+.card1 {
+  height: 240px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  margin-top: 10px;
+}
+
+.card2 {
+  height: 240px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.card3 {
+  height: 240px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.imgRound {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.purpleText {
+  color: hsl(333, 80%, 67%);
+}
+
+.cards-row {
+  margin-top: 260px;
+}
+
+.imgBgTop-mobile {
+  display: none;
+}
+.imgBgBottom-mobile {
+  display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 991px) {
+  .starStructure {
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    position: unset;
+    height: fit-content;
+  }
+
+  .starStructure2 {
+    left: 0px;
+    width: 100%;
+    height: fit-content;
+    position: unset;
+    text-align: center;
+  }
+
+  .starStructure3 {
+    left: 0px;
+    width: 100%;
+    height: fit-content;
+    position: unset;
+    text-align: center;
+  }
+
+  .divStar {
+    position: relative;
+    height: 100%;
+  }
+
+  .textTop {
+    text-align: center;
+    width: 100%;
+  }
+
+  body {
+    overflow: scroll;
+  }
+
+  .cards-row {
+    margin-top: 50px;
+    position: unset;
+  }
+
+  .card1 {
+    position: unset;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .card2 {
+    position: unset;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .card3 {
+    position: unset;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .imgBgTop-mobile {
+    display: unset;
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
-}
-
-.imgBgBottom{
+  }
+  
+  .imgBgBottom-mobile {
+    display: unset;
     position: absolute;
     left: 0px;
     bottom: 0px;
-
-}
-
-
-
-/* Top Div */
-
-.textTop{
-    width: 500px;
-}
-
-
-.textTop h5{
-    color:  hsl(300, 43%, 22%);
-    font-size: 55px;
-    font-weight: 700;
-    
-  
-}
-
-.textTop p{
-    color: hsl(303, 10%, 53%) ;
-    font-size: 15px;
-    
-}
-
-
-/* Text Star Div */
-
-.textStar{
-    justify-content: space-between;
-    display: flex;
-   
-}
-
-.starSpace{
-    width: 17px
-}
-
-
-.starStructure{
-    background-color:   hsl(300, 24%, 96%);
-    width: 400px;
-    height: 50px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-left: -84px;
-
-}
-
-.starStructure2{
-    background-color:   hsl(300, 24%, 96%);
-    width: 400px;
-    height: 50px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-left: -36px;
-}
-
-.starStructure3{
-    background-color:   hsl(300, 24%, 96%);
-    width: 400px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.divStar{
-    
-}
-
-.divStar h2{
-    color: hsl(300, 43%, 22%);
-    margin-left: 25px;
-    font-size: large;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.divStar img{
-   
-}
-
-
-/* Bottom div people of Space */
-
-.card1{
-    width: 350px;
-    height: 240px;
-    margin-top: 260px;
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 10px;
-    color: white;
-    padding: 25px;
-}
-
-.card2{
-    width: 350px;
-    height: 240px;
-    margin-top: 281px;
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 10px;
-    color: white;
-    padding: 25px;
-}
-
-.card3{
-    width: 350px;
-    height: 240px;
-    margin-top: 300px;
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 10px;
-    color: white;
-    padding: 25px;
-}
-
-.imgRound{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
-.purpleText{
-    color:  hsl(333, 80%, 67%);
-}
-
-
-
-
-
-
-/* Media Query */
-
-@media only screen and (max-width: 375px) {
-  /* body{
-    background-color: aqua;
-
   }
-  .textStar{
-    display: block;
-  } */
+
+  .imgBgTop {
+    display: none;
+  }
+  .imgBgBottom {
+    display: none;
+  }
 }
